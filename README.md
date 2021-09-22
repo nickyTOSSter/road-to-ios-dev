@@ -8,4 +8,7 @@
     scale to fill - растягивает картинку по размерам экрана
     aspect fill - картинка увеличивается 
     
-  Для одновременного открытия storyboard/view - editor options - assistant. Для связыывания элемента в коде ПКМ от элемента в код, connection - outlet. Переименовывать элементы через refactor - rename
+  Для одновременного открытия storyboard/view - editor options - assistant. Для связыывания элемента в коде ПКМ от элемента в код, connection - outlet. Если надо     сделать функции к кнопке, то connection - action. Переименовывать элементы через refactor - rename. 
+  
+  Для выбора картинок в коде можно использовать #imageLiteral(resourceName: "filename").
+  Для рандомизации выбора значения в массиве предлагается использовать Int.random(in: range), но можно использовать и встроенную функцию массива randomElement().
