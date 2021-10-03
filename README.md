@@ -36,6 +36,7 @@ Ctrl + I - reindent
 4. Ищем в документации и изучаем, как это работает
 5. Подгоняем код под работу нашего приложения, что-то добавляем, убираем лишнее
 
-AVFoundation
-AVAudioPlayer
-Bundle
+AVFoundation -
+AVAudioPlayer - 
+Bundle - 
+DispatchQueue -
