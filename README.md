@@ -49,3 +49,4 @@ DispatchQueue -
 
 Timer.sheduledTimer - 
 # Раздел 9: iOS App Design Patterns and Code Structuring
+struct
