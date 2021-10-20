@@ -50,3 +50,4 @@ DispatchQueue -
 Timer.sheduledTimer - 
 # Раздел 9: iOS App Design Patterns and Code Structuring
 struct
+UIColor.clear - очистить цвет/цвет по умолчанию
