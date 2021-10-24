@@ -58,3 +58,4 @@ Controller - ViewController, должен быть только код по ра
 # Раздел 11: Advanced Swift Programming - Classes, Inheritance & Advanced Optionals
 Округление при выводе String(format: "%.2f", Value) - 2f - количество знаков после запятой
 Для классов обязательна процедура инициализации, если не все параметры заданы по умолчанию. Классы referenceType. Не требуется mutating. Объекты константы могут менять свои свойства
+UIViewController - 
