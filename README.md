@@ -62,3 +62,7 @@ UIViewController -
 Для показа другого view используем команду present текущего view. В него передаем экзмпляр класса необходимого для отражения view. Параметры передаем через свойства второго view.
 Контроллеры для новых view создаются через Cocoa Touch Class. Затем созданный класс нужно выбрать в свойствах сцены
 Переходы segue. От одного класса тянемся к другому создаем segue. Задаем идентификатор. Вызвать переход методом performSegue. выполнить предварительную настройку в переопределенном методе prepare. В этом методе проверяем идентификатор (segue.identifier). Затем получаем view из segue.destination. View даункастим до нашего класса as! имя_класса_view. И уже затем можно передавать параметры
+Для работы с опциональными типами используем: 
+  Optional binding - (if let safeOptional = optional { safeOptional})
+  nil coalescing operator - (optional ?? defaultValue)
+  optional chaining - (optionalObject?.property)
