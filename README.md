@@ -67,3 +67,5 @@ UIViewController -
   nil coalescing operator - (optional ?? defaultValue)
   optional chaining - (optionalObject?.property)
 # Раздел 13: Networking, JSON Parsing, APIs and Core Location
+Системные цвета поддерживают темную тему автоматически. 
+Создание своих цветов светлой/темной темы - в assets добавить новый цвет - выбрать цвет темы по умолчанию и светлой темы - выбрать свет темной темы - задать наименование - выбрать по данному наименованию во view
