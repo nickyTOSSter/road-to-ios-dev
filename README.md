@@ -66,3 +66,4 @@ UIViewController -
   Optional binding - (if let safeOptional = optional { safeOptional})
   nil coalescing operator - (optional ?? defaultValue)
   optional chaining - (optionalObject?.property)
+# Раздел 13: Networking, JSON Parsing, APIs and Core Location
