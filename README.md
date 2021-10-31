@@ -90,3 +90,31 @@ Protocol - набор правил для классов и структур (т
       // func code
     }
   }
+networking:
+  1. Создать URL - URL(string: urlString)
+  2. Создать URLSession - URLSession(configuration: .default)
+  3. Дать сессии задание - session.dataTask(with: url, completionHandler: handle(data:response:error:))
+  4. Запустить задание - task.resume  
+        
+    if let url = URL(string: urlString) {
+      
+      // 2. Create URLSession
+      let session = URLSession(configuration: .default)
+      
+      // 3. Give the session a task
+      //let task = session.dataTask(with: url, completionHandler: handle(data:response:error:))
+      let task = session.dataTask(with: url) {
+        (data: Data?, response: URLResponse?, error: Error?) in
+        if error != nil {
+          print(error!)
+          return
+        }
+        
+        if let safeData = data {
+          let dataString = String(data: safeData, encoding: .utf8)
+          print(dataString)
+        }
+      }
+      // 4. Start the task
+      task.resume()
+    }
