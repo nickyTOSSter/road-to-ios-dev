@@ -118,3 +118,5 @@ networking - углубиться:
       // 4. Start the task
       task.resume()
     }
+
+closures - углубиться
