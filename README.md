@@ -119,4 +119,4 @@ networking - углубиться:
       task.resume()
     }
 
-closures - углубиться
+closures - углубиться, map, reduce, filter
