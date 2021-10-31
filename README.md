@@ -72,3 +72,21 @@ UIViewController -
 Для картинок можно использовать pdf. При этом надо установить флаг preserve vector data, scales - single scale. Чтобы можно было менять в зависимости от темы устанавливаем свойстве appearances.
 Для работы с UITextField существует протокол UITextFieldDelegate. Этот протокол обеспечивает процедурами на разные события ввод, окончание редактирования и т.д.
 Protocol - набор правил для классов и структур (требуется углубиться)
+Паттерн Delegate - углубиться:
+  protocol ProtocolName {
+    func protocolFunc()
+  }
+  
+  class Handler {
+    var delegate: ProtocolName?
+    delegate.protocolFunc()
+  }
+  
+  class MyClass: ProtocolName {
+    var handler = Handler()
+    handler.delegate = self
+    
+    func protocolFunc() {
+      // func code
+    }
+  }
