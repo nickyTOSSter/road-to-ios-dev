@@ -90,7 +90,7 @@ Protocol - набор правил для классов и структур (т
       // func code
     }
   }
-networking:
+networking - углубиться:
   1. Создать URL - URL(string: urlString)
   2. Создать URLSession - URLSession(configuration: .default)
   3. Дать сессии задание - session.dataTask(with: url, completionHandler: handle(data:response:error:))
