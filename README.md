@@ -120,3 +120,26 @@ networking - углубиться:
     }
 
 closures - углубиться, map, reduce, filter
+В замыканиях в случае если вызывается функция этого же класса надо прописывать self
+При чтении JSON структура должна соответствовать протоколу Decodable
+Чтение JSON:
+    let decoder = JSONDecoder()
+    do {
+      let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
+    } catch {
+      print(error)
+    }
+При создании модели для декодирования вложенные данные берутся из структур
+  struct WeatherData: Decodable {
+    let name: String
+    let main: Main
+    let weather: [Weather]
+  }
+
+  struct Main: Decodable {
+    let temp: Double
+  }
+
+  struct Weather: Decodable {
+    let description: String
+  }
