@@ -156,5 +156,9 @@ struct WeatherManager {
  var delegate: WeatherManagerDelegate?
  delegate?.didUpdateWeather(self, weather: weather)
 }
+Для обновления интерфейса из completionHandler надо перейти в основной поток с помощью
+DispatchQueue.main.async {} и провести обновление в нем
 
-DispatchQueue
+sf симвлоы указываются через UIImage.image(systemName:)
+
+extension SomeType: SomeProtocol {} при расширении класса с протоколом протокол у класса убрать
