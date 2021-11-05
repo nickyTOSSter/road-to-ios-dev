@@ -143,3 +143,8 @@ closures - углубиться, map, reduce, filter
   struct Weather: Decodable {
     let description: String
   }
+
+condition property - всегда var, значение вычисляется в фигурных скобках в момент вызова свойства
+  var temperatureString: String {
+      return String(format: "%.1f", temperature)
+  } 
