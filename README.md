@@ -150,3 +150,11 @@ condition property - всегда var, значение вычисляется �
   } 
 
 Протокол создается в том же файле, что и класс который будет его использовать
+Для функции делегата первым параметром необходимо передавать класс, который использует данную функцию
+func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel)
+struct WeatherManager {
+ var delegate: WeatherManagerDelegate?
+ delegate?.didUpdateWeather(self, weather: weather)
+}
+
+DispatchQueue
