@@ -162,3 +162,4 @@ DispatchQueue.main.async {} и провести обновление в нем
 sf симвлоы указываются через UIImage.image(systemName:)
 
 extension SomeType: SomeProtocol {} при расширении класса с протоколом протокол у класса убрать
+Пакет CoreLocation используется для геолокации. Необходимо использовать менеджер let locationManager = CLLocationManager(). При запуске запросить разрешение на использование данны о локации пользователя locationManager.requestWhenInUseAuthorization(). В info.plist настроить сообщение зачем нужна информация о локации
